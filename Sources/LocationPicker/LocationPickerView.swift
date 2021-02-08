@@ -10,6 +10,10 @@ public struct LocationPickerView: View {
     @State private var searchText: String = ""
     @StateObject private var localSearchCompleter: LocationPicker = LocationPicker()
     
+    public init(coordinates: Binding<CLLocationCoordinate2D?>) {
+        self._coordinates = coordinates
+    }
+    
     public var body: some View {
         
         ZStack {
