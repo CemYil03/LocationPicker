@@ -9,14 +9,12 @@ let package = Package(
     products: [
         .library(
             name: "LocationPicker",
-            type: Product.Library.LibraryType.dynamic,
             targets: ["LocationPicker"]
         )
     ],
     targets: [
         .target(
-            name: "LocationPicker",
-            dependencies: []
+            name: "LocationPicker"
         )
     ]
 )
